@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background:#222;
+    overflow-X: hidden;
+    height: 2600px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav.active a {
+    color: #000;
+  }
+  
+  .nav.active .container {
+    padding: 10px 0;
+  }
+  
+  .nav a.current,
+  .nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
+  }
+
+  .hero-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4.1rem;
+      width: 100%;
+      height: 400px;
+ 
+      
+  }
+
+  .title-header h1 {
+      color: #ffff;
+      font-size: 45px;
+  }
+
+  .title-section {
+      font-size: 25px;
+      color: #ffff;
+      text-align: center;
+      margin-top: 200px;
+
+  }
+
+  .section-deskripsi {
+    transition: ease 1.6s;
+    opacity: 0;
+  }
+
+  .anggota {
+    width: 55%;
+    margin: 320px auto;
+    margin-left: 800px;
+    transition: ease 2.5s;
+}
+
+  .section-deskripsi.test {
+    opacity: 1;
+  }
+
+  .anggota.test {
+    margin-left: 22%;
+  }
+
+  .title-deskripsi {
+      width: 80%;
+      margin: auto;
+      margin-top: 2rem;
+      text-align: center;
+      color: #ffff;
+  }
+  
+
+  .gambar-project {
+    position: relative;
+      margin: auto;
+      width: 50%;
+      display: flex;
+      margin-top: 10rem;
+      justify-content: center;
+  }
+
+  .gambar-project .gambar-project-satu img {
+      width: 400px;
+      height: 400px;
+      z-index: 1;
+  }
+
+  .gambar-project .gambar-project-dua img {
+      position: absolute;
+      z-index: 2;
+      width: 300px;
+      height: 300px;
+      top: 0;
+      left: 60%;
+  }
+
+ 
+
+  .judul-anggota {
+      margin-top: 200px;
+      text-align: center;
+      color: #ffff;
+      font-size: 25px;
+  }
+
+  .container-anggota {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 80px;
+  }
+  .gambar-section span {
+      display: flex;
+      justify-content: center;
+      color: #ffff;
+      font-style: medium;
+  }
+
+  .gambar-section img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+  }
+
+  .tgs_kelompok {
+    width: 70%;
+    margin: 150px auto;
+  }
+
+  .judul_kerja_kelompok {
+    color: white;
+    text-align: center;
+    margin: 150px 0;
+    opacity: 0;
+    transition: ease 0.5s;
+  }
+
+  .judul_kerja_kelompok.test {
+    opacity: 1;
+  }
+
+  .pembungkus {
+    display: flex;
+  }
+
+
+
+  .tgs {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .tgs h3 {
+    font-style: bold;
+  }
+
+  .tgs span {
+    margin-top: 3rem;
+  }
+
+
+  .gambar-kelompok {
+    margin: 0 10px;
+  }
+
+  .gambar-kelompok img {
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 10px white;
+    margin-right: 3rem;
+  }
+
+  #pembungkus_2{
+    margin-top: 20px;
+  }
+
+  #pembungkus_3 {
+    margin-top: 20px;
+  }
+ 
+
+  #pembungkus_4 {
+    margin-top: 20px;
+  }
+
+  .last-anggota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .last-anggota .tgs {
+    text-align: center;
+  }
+
+  .last-anggota .gambar-kelompok img {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .kontent {
+    display: flex;
+    flex-direction: column;
+  }

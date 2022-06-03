@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Halaman Data</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="sidebar-nav">
+				<div class="hiasan">
+					<img src="{{url_for('static', filename='asset/gambar/segitiga.png')}}" alt="">
+				</div>
+				<div class="hiasan-dua">
+					<img src="{{url_for('static', filename='asset/gambar/lingkaran-dua.png')}}" alt="">
+				</div>
+				<h4>App</h4>
+				<ul>
+					<li><a href="">Profil</a></li>
+					<li><a href="/setting">Setting</a></li>
+					<li><a href="">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="navbar">
+				<span>My App</span>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/data">Data</a></li>
+					<li><a href="/model">Model</a></li>
+				</ul>
+			</div>
+			<h5>Recommended Movies</h5>
+			<div class="daftar_film">
+				<div class="title-film">
+					<div class="logo-film">
+						<div class="wrapper_wrapper">
+							<div class="movie">
+									<img src="{{url_for('static', filename='asset/gambar/surat.jpg')}}">
+									<div class="movie-info">
+										<h3>Surat Cinta Untuk Starla</h3>
+										<span>6.7</span>
+									</div>
+									<div class="overview">
+										<h3>overview</h3>
+										sembarang
+									</div>
+								</div>
+
+								<div class="movie">
+									<img src="{{url_for('static', filename='asset/gambar/surat.jpg')}}">
+									<div class="movie-info">
+										<h3>Silariang</h3>
+										<span>6.7</span>
+									</div>
+									<div class="overview">
+										<h3>overview</h3>
+										sembarang
+									</div>
+								</div>
+
+								<div class="movie">
+									<img src="{{url_for('static', filename='asset/gambar/surat.jpg')}}">
+									<div class="movie-info">
+										<h3>Surat untuk mu</h3>
+										<span>6.7</span>
+									</div>
+									<div class="overview">
+										<h3>overview</h3>
+										sembarang
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</body>
+</html>

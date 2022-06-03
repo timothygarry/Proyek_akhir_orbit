@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Akhir Orbit Faature Academy</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+    
+    <nav class="nav">
+        <div class="container">
+          <h1 class="logo"><a href="/index.html">App</a></h1>
+          <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="/data">Data</a></li>
+            <li><a href="/model">Model</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="hero-header">
+            <div class="title-header">
+                <h1>Dhasbord Film Prediction Market Basket Analys</h1>
+				{%for i in range(0, total)%}
+				<li>{{movies[i]}}</li>
+				{%endfor%}
+            </div>
+      </header>
+
+      <section class="section-deskripsi">
+          <div class="title-section">
+              <h1>Deskripsi Project</h1>
+          </div>
+          <div class="gambar-project">
+            <div class="gambar-project-satu">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="">
+              </div>
+              <div class="gambar-project-dua">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-dua.jpg')}}" alt="">
+              </div>
+          </div>
+          <div class="title-deskripsi">
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta sapiente, magni ullam nostrum doloribus voluptates doloremque assumenda vitae a perspiciatis quia facere voluptatibus commodi, dolorum at, ea corporis maxime. Dicta.</span>
+          </div>
+      </section>
+
+
+      <section class="anggota">
+          <div class="judul-anggota">
+              <h1>Anggota Kelompok</h1>
+          </div>
+          <div class="container-anggota">
+            <div class="gambar-section">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="Gambar Loaded">
+                <span>rahmad</span>
+            </div>
+            
+            <div class="gambar-section">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-dua.jpg')}}" alt="Gambar Loaded">
+                <span>Ilyas</span>
+            </div>
+
+            <div class="gambar-section">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-tiga.jpg')}}" alt="Gambar Loaded">
+                <span>Antony</span>
+            </div>
+
+            <div class="gambar-section">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-empat.jpg')}}" alt="Gambar Loaded">
+                <span>Adriansyah</span>
+            </div>
+
+            <div class="gambar-section">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-lima.jpg')}}" alt="Gambar Loaded">
+                <span>Timoty</span>
+            </div>
+          </div>
+
+          
+      </section>
+      
+
+      <section class="tgs_kelompok">
+          <div class="judul_kerja_kelompok">
+              <h1>Tugas Masing Masing Kelompok</h1>
+          </div>
+         <div class="pembungkus" id="pembungkus_1" >
+            <div class="gambar-kelompok" >
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="">
+            </div>
+            <div class="tgs">
+                <h3>Rahmad</h3>
+                <h4>Frond-End Engginer</h4>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eius accusamus distinctio, quo beatae voluptates praesentium corrupti nihil atque. Laborum aliquid alias, ad suscipit fugit culpa quia temporibus numquam neque..</span>
+  
+            </div>
+         </div>
+
+         <div class="pembungkus" id="pembungkus_2">
+            <div class="gambar-kelompok">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="">
+            </div>
+            <div class="tgs">
+                <h3>Ilyas</h3>
+                <h4>Frond-End Engginer</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed velit quasi quis. Veniam odio aut, facilis, nobis tempore sint fugiat laudantium adipisci ullam ex molestiae in, culpa saepe inventore.</span>
+  
+            </div>
+         </div>
+
+         <div class="pembungkus" id="pembungkus_3">
+            <div class="gambar-kelompok">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="">
+            </div>
+            <div class="tgs">
+                <h3>Antony</h3>
+                <h4>Frond-End Engginer</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed velit quasi quis. Veniam odio aut, facilis, nobis tempore sint fugiat laudantium adipisci ullam ex molestiae in, culpa saepe inventore.</span>
+  
+            </div>
+         </div>
+
+         <div class="pembungkus" id="pembungkus_4">
+            <div class="gambar-kelompok">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="">
+            </div>
+            <div class="tgs">
+                <h3>Adriyansyah</h3>
+                <h4>Frond-End Engginer</h4>
+                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed velit quasi quis. Veniam odio aut, facilis, nobis tempore sint fugiat laudantium adipisci ullam ex molestiae in, culpa saepe inventore.</span>
+  
+            </div>
+         </div>
+
+        <div class="last-anggota" id="pembungkus_5">
+            <div class="gambar-kelompok">
+                <img src="{{url_for('static', filename='asset/gambar/gambar-satu.jpg')}}" alt="">
+            </div>
+            <div class="tgs">
+                <h3>Timoty</h3>
+                <h4>Data Engginer</h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sed velit quasi quis. Veniam odio aut, facilis, nobis tempore sint fugiat laudantium adipisci ullam ex molestiae in, culpa saepe inventore.</span>
+  
+            </div>
+        </div>
+
+        <footer>
+            <div class="element-pertama">
+                <div class="kontent">
+                    <h3>Linkedln</h3>
+                    <h3>Twitter</h3>
+                    <h3>Discord</h3>
+                </div>
+            </div>
+            <div class="element-kedua">
+                <h3>Email : Coba@gmail.com</h3>
+            </div>
+            <div class="element-ketiga">
+                <h3>Good job</h3>
+            </div>
+        </footer>
+      </section>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>
