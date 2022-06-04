@@ -23,10 +23,13 @@
 
       <header class="hero-header">
             <div class="title-header">
+
                 <h1>Dhasbord Film Prediction Market Basket Analys</h1>
-				{%for i in range(0, total)%}
-				<li>{{movies[i]}}</li>
-				{%endfor%}
+                        <input type="text" placeholder="Search" id="search" class="search">
+                        {%for i in range(0, total) %}
+				            <li>{{movie[i]}}</li>
+				        {%endfor%}
+                    </form>
             </div>
       </header>
 

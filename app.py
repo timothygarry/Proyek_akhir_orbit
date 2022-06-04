@@ -2,15 +2,16 @@ from flask import Flask
 from flask import render_template
 import pandas as pd
 import joblib 
+import pickle
 app = Flask(__name__)
 
 
 
-@app.route("/")
-def index():
-    predict = joblib.load("modelling/mba_recommended.pkl")
-    result = predict("toy story")
-    return render_template("index.html", total = len(result), movies = result)
+predict = pickle.load(open("mba_recom_df.pkl",'rb'))
+@app.route("/",methods = ['POST', 'GET'])
+def index():   
+        result = predict("balto")
+        return render_template("index.html", total = len(result) , movie = result)
 
 
 
